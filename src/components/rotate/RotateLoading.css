@@ -1,0 +1,39 @@
+.rotateBody {
+    background-color: #e2ad81;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.rotateLoad::after {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    border: 30px solid #fff;
+    width: 0;
+    height: 0;
+    margin: 6px;
+    border-color: #fff transparent #fff transparent;
+    animation: swish 1.2s ease-in-out infinite;
+}
+
+@keyframes swish {
+    0% {
+        transform: rotate(0deg);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 019);
+    }
+
+    50% {
+        transform: rotate(90deg);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    100% {
+        transform: rotate(180deg);
+
+    }
+}

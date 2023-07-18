@@ -1,0 +1,37 @@
+.blinkBody {
+    background-color: #e154f1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.blink-one,
+.blink-two {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 100%;
+    opacity: 0.6;
+    position: absolute;
+    animation: blinkLoad 2s ease-in-out infinite;
+}
+
+.blink-two {
+    animation-delay: -1s;
+}
+
+@keyframes blinkLoad {
+
+    0%,
+    100% {
+        transform: scale(0.0);
+    }
+
+    50% {
+        transform: scale(1.0);
+    }
+}

@@ -1,0 +1,54 @@
+.slideBody {
+    background-color: #db624c;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.slide-load {
+    animation: slideLoad 2s ease-in-out infinite;
+
+}
+
+.slide-one,
+.slide-two {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 100%;
+    opacity: 0.6;
+    animation: slideScale 2s ease-in-out infinite;
+}
+
+.slide-two {
+    animation-delay: -1s;
+}
+
+
+@keyframes slideLoad {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slideScale {
+
+    0%,
+    100% {
+        transform: scale(0.0);
+    }
+
+    50% {
+        transform: scale(1.0);
+    }
+}

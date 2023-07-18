@@ -1,0 +1,32 @@
+.persBody {
+    background-color: #d35400;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.loaderPers {
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    animation: rotator 2.2s ease-in-out infinite;
+}
+
+
+
+@keyframes rotator {
+    0% {
+        transform: perspective(120px)rotateX(0deg)rotateY(0deg);
+    }
+
+    50% {
+        transform: perspective(120px)rotateX(-180deg)rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(120px)rotateX(-180deg)rotateY(-180deg);
+    }
+}

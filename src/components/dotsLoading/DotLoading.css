@@ -1,0 +1,126 @@
+.dotsBody {
+    background-color: #505790;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dotsLoader {
+    height: 64px;
+    width: 64px;
+    position: absolute;
+
+
+}
+
+.dotsLoader div {
+    transform-origin: 32px 32px;
+    animation: roam 1.2s cubic-bezier(0.5, 1, 0.5, 1) infinite;
+
+}
+
+.dotsLoader div::after {
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 0;
+}
+
+.dotsLoader div:nth-child(1) {
+    animation-delay: -0.03s;
+}
+
+.dotsLoader div:nth-child(2) {
+    animation-delay: -0.073s;
+}
+
+.dotsLoader div:nth-child(3) {
+    animation-delay: -0.103s;
+}
+
+.dotsLoader div:nth-child(4) {
+    animation-delay: -0.113s;
+}
+
+.dotsLoader div:nth-child(5) {
+    animation-delay: -0.143s;
+}
+
+.dotsLoader div:nth-child(6) {
+    animation-delay: -0.183s;
+}
+
+.dotsLoader div:nth-child(7) {
+    animation-delay: -0.213s;
+}
+
+.dotsLoader div:nth-child(8) {
+    animation-delay: -0.243s;
+}
+
+.dotsLoader div:nth-child(1)::after {
+    top: 50px;
+    left: 50px;
+    /* animation-delay: -0.13s; */
+}
+
+.dotsLoader div:nth-child(2)::after {
+    top: 54px;
+    left: 45px;
+    /* animation-delay: -0.173s; */
+}
+
+.dotsLoader div:nth-child(3)::after {
+    top: 57px;
+    left: 39px;
+    /* animation-delay: -0.203s; */
+
+}
+
+.dotsLoader div:nth-child(4)::after {
+    top: 58px;
+    left: 32px;
+    /* animation-delay: -0.243s; */
+}
+
+
+.dotsLoader div:nth-child(5)::after {
+    top: 57px;
+    left: 25px;
+    /* animation-delay: -0.283s; */
+}
+
+.dotsLoader div:nth-child(6)::after {
+    top: 54px;
+    left: 19px;
+    /* animation-delay: -0.313s; */
+}
+
+.dotsLoader div:nth-child(7)::after {
+    top: 50px;
+    left: 14px;
+    /* animation-delay: -0.343s; */
+}
+
+.dotsLoader div:nth-child(8)::after {
+    top: 45px;
+    left: 10px;
+    /* animation-delay: -0.343s; */
+}
+
+@keyframes roam {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+
+    }
+}
